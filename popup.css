@@ -1,0 +1,7 @@
+.container {
+  .title {
+    display: block;
+    font-size: xx-large;
+    background: linear-gradient(45deg, pink, crimson);
+  }
+}

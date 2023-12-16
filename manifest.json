@@ -8,12 +8,13 @@
     "https://*.visual.force.com/*",
     "https://*.lightning.force.com/*",
     "https://*.cloudforce.com/*",
-    "https://*.visualforce.com/*"
+    "https://*.visualforce.com/*",
+    "https://*.my.site.com/*"
   ],
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["cookies"],
+  "permissions": ["storage", "cookies"],
   "content_scripts": [
     {
       "matches": [
@@ -21,7 +22,8 @@
         "https://*.visual.force.com/*",
         "https://*.lightning.force.com/*",
         "https://*.cloudforce.com/*",
-        "https://*.visualforce.com/*"
+        "https://*.visualforce.com/*",
+        "https://*.my.site.com/*"
       ],
       "js": ["contentScript.js"]
     }
